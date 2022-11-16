@@ -1,63 +1,73 @@
-.hero__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    gap: 5rem;
+/* hero section styles */
+.hero__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse;
+	gap: 5rem;
 }
-.hero__left__wrapper{
-    max-width: 360px;
+.hero__left__wrapper {
+	max-width: 350px;
 }
-.hero__imgWrapper{
-    max-width: 400px;
-    width: 80%;
-    margin: 0 auto;
+.hero__imgWrapper {
+	max-width: 400px;
+	width: 80%;
+	margin: 0 auto;
 }
 .hero__heading {
-    font-family: 'Poppins';
-    font-weight: 600;
-    line-height: 1.4rem;
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--black-1);
+	font-family: Poppins;
+	font-weight: 600;
+	line-height: 1.4em;
+	text-align: center;
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-1);
 }
-.hero__info{
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 1.54rem;
-    color: var(--black-2);
+.hero__info {
+	text-align: center;
+	font-size: 1.4rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-2);
+	line-height: 2rem;
 }
-.button__wrapper{
-    text-align: center;
+.button__wrapper {
+	text-align: center;
 }
 
-@media only screen and (min-width:768px) {
-    .hero__wrapper{
-        flex-direction: row;
-        gap:0;
-    }
-    .hero__left{
-        flex: 3;
-    }
-    .hero__right{
-        flex: 4;
-    }
-    .hero__heading{
-        font-size: 3.6rem;
-        margin-bottom: 2rem;
-        text-align: left;
-    }
-    .hero__info{
-        margin-bottom: 2rem;
-        text-align:left;
-        font-size: 1.8rem;
-    }
-    .button__wrapper{
-        text-align: left;
-    }
-    .hero__imgWrapper{
-        max-width: none;
-        width: 90%;
-    }
+@media only screen and (min-width: 768px) {
+	.hero__wrapper {
+		flex-direction: row;
+		gap: 0;
+	}
+	.hero__left {
+		flex: 3;
+	}
+	.hero__right {
+		flex: 4;
+	}
+	.hero__heading {
+		font-size: 3.6rem;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.hero__info {
+		margin-bottom: 2rem;
+		text-align: left;
+		font-size: 1.8rem;
+	}
+
+	.button__wrapper {
+		text-align: left;
+	}
+	.hero__imgWrapper {
+		max-width: none;
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.hero__left,
+	.hero__right {
+		flex: 1;
+	}
 }
