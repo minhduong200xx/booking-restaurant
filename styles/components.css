@@ -127,6 +127,7 @@ footer{
     font-size: 1.4rem;
     color: var(--black-2);
     margin-bottom: 2rem;
+    line-height: 2rem;
 }
 
 .footer__socials__title  {
