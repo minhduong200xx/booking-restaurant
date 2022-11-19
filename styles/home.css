@@ -115,7 +115,7 @@
 	font-weight: 500;
 	color: var(--black-1);
 }
-@media screen and (min-width: 786px) {
+@media only screen and (min-width: 786px) {
 	.whyUs__wrapper {
 		flex-direction: row;
 		max-width: 900px;
@@ -201,7 +201,7 @@
 .testimonial__item__text {
 	font-size: 1.4rem;
 }
-@media screen and (min-width: 768){
+@media only screen and (min-width: 768){
 	.testimonial__wrapper {
 		max-width: 900px;
 	}
@@ -227,7 +227,7 @@
 		line-height: 1.4em;
 	}
 }
-@media screen and (max-width: 350px){
+@media only screen and (max-width: 350px){
 	.testimonial__item {
 		flex-direction: column;
 	}
@@ -285,7 +285,7 @@
 	right: 0;
 	top: 0;
 }
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 	.newsletter__wrapper {
 		flex-direction: row;
 		padding: 5rem;
