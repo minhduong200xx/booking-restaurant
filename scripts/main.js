@@ -31,21 +31,62 @@ AOS.init({
   mirror: false,
   anchorPlacement: "top-bottom",
 });
-// // ===== Scroll to Top ====
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() >= 50) {
-//     // If page is scrolled more than 50px
-//     $("#return-to-top").fadeIn(200); // Fade in the arrow
-//   } else {
-//     $("#return-to-top").fadeOut(200); // Else fade out the arrow
-//   }
-// });
-// $("#return-to-top").click(function () {
-//   // When arrow is clicked
-//   $("body,html").animate(
-//     {
-//       scrollTop: 0, // Scroll to top of body
-//     },
-//     500
-//   );
-// });
+
+//Button to top
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+//Success popup
+// Pssst, I've created a github package - https://github.com/brookesb91/dismissible
+
+const showBanner = (selector) => {
+  hideBanners();
+  // Ensure animation plays even if the same alert type is triggered.
+  requestAnimationFrame(() => {
+    const banner = document.querySelector(selector);
+    banner.classList.add("visible");
+  });
+};
+
+const hideBanners = (e) => {
+  document
+    .querySelectorAll(".banner.visible")
+    .forEach((b) => b.classList.remove("visible"));
+};
+function send() {
+  var arr = document.getElementsByName("1");
+  console.log(arr);
+  if (
+    arr[0] != "" &&
+    arr[1] != "" &&
+    arr[2] != "" &&
+    arr[3] != "" &&
+    arr[4] != "" &&
+    arr[0] != null &&
+    arr[1] != null &&
+    arr[2] != null &&
+    arr[3] != null &&
+    arr[4] != null
+  ) {
+    showBanner(".banner.success");
+  } else {
+    showBanner(".banner.error");
+  }
+}
