@@ -1,0 +1,105 @@
+/* NV Thuan page tittle style*/
+#page__tittle {
+  margin-top: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.page__tittle__text {
+  font-size: 2.2rem;
+  color: var(--black-1);
+}
+@media only screen and (min-width: 768px) {
+  #page__tittle {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .page__tittle__text {
+    font-size: 3.6rem;
+  }
+}
+/* NV Thuan Our Specicals Menu style*/
+#ourSpecicals {
+  padding: 0;
+}
+.ourSpecicals__tittle {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 2rem;
+}
+.ourSpecicals__wrapper {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  max-width: 400px;
+}
+.ourSpecicals__item {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--lightGreen-1);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.ourSpecicals__item__img,
+.ourSpecicals__item__info {
+  flex: 1;
+}
+.ourSpecicals__item__img {
+  border-radius: 12x;
+  overflow: hidden;
+}
+.ourSpecicals__item__img img {
+  object-fit: cover;
+}
+.ourSpecicals__item__tittle {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--black-1);
+  line-height: 1.2em;
+}
+.ourSpecicals__item__price {
+  font-size: 1.8rem;
+  color: var(--orange-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.ourSpecicals__item__stars {
+  width: max-content;
+}
+@media only screen and (min-width: 768px) {
+  .ourSpecicals__tittle {
+    font-size: 2.4rem;
+  }
+  .ourSpecicals__wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: none;
+  }
+  .ourSpecicals__item {
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .ourSpecicals__item__tittle {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .ourSpecicals__item__price {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .ourSpecicals__item__img {
+    flex: 4;
+  }
+  .ourSpecicals__item__info {
+    flex: 3;
+  }
+}
+#dishGrid {
+  padding-bottom: 0;
+}
+#dishGrid:last-of-type {
+  padding-bottom: 10rem;
+}
