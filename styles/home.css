@@ -399,6 +399,7 @@
   }
 }
 /*NV Thuận Why Us section style*/
+/* WhyUs Section */
 .whyUs__wrapper {
   display: flex;
   align-items: center;
@@ -419,18 +420,20 @@
 .whyUs__text {
   font-size: 1.4rem;
 }
+.whyUs__right {
+  text-align: center;
+}
 .whyUs__items__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 .whyUs__item {
-  background: var(--lightGreen-1);
+  background: var(--lightorange-1);
   padding: 2rem;
   border-radius: 12px;
-  text-align: center;
 }
-.whyUs_item__icon {
+.whyUs__item__icon {
   max-width: 56px;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -441,7 +444,7 @@
   font-weight: 500;
   color: var(--black-1);
 }
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   .whyUs__wrapper {
     flex-direction: row;
     max-width: 900px;
@@ -468,260 +471,18 @@
   .whyUs__item {
     padding: 2rem;
   }
-  .whyUs_item__icon {
+  .whyUs__item__icon {
     max-width: 65px;
     margin-bottom: 1.5rem;
   }
   .whyUs__item__text {
     font-size: 1.8rem;
-  }
-}
-/* NV Thuan - Testimonial section styles */
-.testimonial__wrapper {
-  max-width: 400px;
-  margin: 0 auto;
-}
-.testimonial__title {
-  font-size: 1.8rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--black-1);
-}
-.testimonial__items__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-.testimonial__item {
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-  background: var(--lightGreen-1);
-  border-radius: 12px;
-}
-.testimonial__item__info {
-  flex: 4;
-}
-.testimonial__item__img {
-  flex: 2;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-.testimonial__item__img img {
-  object-fit: cover;
-}
-.testimonial__item__name {
-  font-size: 1.4rem;
-  font-family: Roboto Slab;
-  margin-bottom: 1rem;
-  color: var(--black-1);
-}
-.testimonial__item__stars {
-  max-height: 15px;
-  width: max-content;
-  margin-bottom: 1.5rem;
-}
-.testimonial__item__text {
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 768) {
-  .testimonial__wrapper {
-    max-width: 900px;
-  }
-  .testimonial__title {
-    font-size: 3.6rem;
-    margin-bottom: 5rem;
-  }
-  .testimonial__items__wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-  .testimonial__item {
-    padding: 2rem;
-  }
-  .testimonial__item__name {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-  .testimonial__item__stars {
-    margin-bottom: 2rem;
-  }
-  .testimonial__item__text {
-    font-size: 1.6rem;
-    line-height: 1.4em;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .testimonial__item {
-    flex-direction: column;
-  }
-  .testimonial__item__img,
-  .testimonial__item__info {
-    flex: auto;
-  }
-}
-/*NV Thuan - Newsletter Section style*/
-.newsletter__wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--orange-2);
-  padding: 1.5rem;
-  border-radius: 8px;
-  gap: 2rem;
-}
-.newsletter__title {
-  font-size: 1.8rem;
-  color: var(--black-1);
-  font-weight: 600;
-  margin-bottom: 1.3rem;
-}
-.newsletter__text {
-  font-size: 1.4rem;
-  color: var(--orange-1);
-  font-weight: 500;
-}
-.newsletter__form form {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.newsletter__form label {
-  width: 100%;
-}
-.newsletter__form input {
-  width: 100%;
-  font-size: 1.4rem;
-  padding: 1.5rem 1rem;
-  border: none;
-}
-.newsletter__form input::placeholder {
-  color: rgb(168, 166, 166);
-}
-.newsletter__form button[type="submit"] {
-  background-color: var(--orange-1);
-  color: var(--white-1);
-  border: none;
-  font-size: 1.4rem;
-  padding: 0 2rem;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-@media only screen and (min-width: 768px) {
-  .newsletter__wrapper {
-    flex-direction: row;
-    padding: 5rem;
-    align-items: center;
-  }
-  .newsletter__form,
-  .newsletter__info {
-    flex: 1;
-  }
-  .newsletter__title {
-    font-size: 3.6rem;
-    margin-bottom: 2rem;
-  }
-  .newsletter__text {
-    font-size: 1.8rem;
-    max-width: 400px;
-  }
-  .newsletter__form {
-    max-width: 450px;
-    border-radius: 12px;
-  }
-  .newsletter__form input {
-    font-size: 1.8rem;
-    padding: 2rem;
-  }
-  .newsletter__form botton[type="submit"] {
-    font-size: 1.8rem;
-    padding: 0 3rem;
   }
 }
 
-/*NV Thuận Why Us section style*/
-.whyUs__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 4rem;
-}
-.whyUs__left {
-  text-align: center;
-}
-.whyUs__title {
-  font-family: Poppins;
-  font-size: 1.8rem;
-  color: var(--black-1);
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-.whyUs__text {
-  font-size: 1.4rem;
-}
-.whyUs__items__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-.whyUs__item {
-  background: var(--lightGreen-1);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-}
-.whyUs_item__icon {
-  max-width: 56px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-.whyUs__item__text {
-  font-family: Poppins;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--black-1);
-}
-@media only screen and (min-width: 786px) {
-  .whyUs__wrapper {
-    flex-direction: row;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .whyUs__left {
-    flex: 4;
-    text-align: left;
-  }
-  .whyUs__right {
-    flex: 3;
-  }
-  .whyUs__title {
-    font-size: 3.6rem;
-    margin-bottom: 2rem;
-  }
-  .whyUs__text {
-    font-size: 1.8rem;
-    line-height: 1.4em;
-  }
-  .whyUs__items__wrapper {
-    gap: 1.5rem;
-  }
-  .whyUs__item {
-    padding: 2rem;
-  }
-  .whyUs_item__icon {
-    max-width: 65px;
-    margin-bottom: 1.5rem;
-  }
-  .whyUs__item__text {
-    font-size: 1.8rem;
-  }
-}
-/* NV Thuan - Testimonial section styles */
+/* End WhyUs Section */
+
+/* Testimonial Section */
 .testimonial__wrapper {
   max-width: 400px;
   margin: 0 auto;
@@ -730,19 +491,18 @@
   font-size: 1.8rem;
   margin-bottom: 3rem;
   text-align: center;
-  text-transform: capitalize;
   color: var(--black-1);
 }
 .testimonial__items__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .testimonial__item {
   padding: 1rem;
   display: flex;
   gap: 1rem;
-  background: var(--lightGreen-1);
+  background-color: var(--lightorange-1);
   border-radius: 12px;
 }
 .testimonial__item__info {
@@ -752,17 +512,16 @@
   flex: 2;
   border-radius: 12px;
   overflow: hidden;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .testimonial__item__img img {
   object-fit: cover;
 }
 .testimonial__item__name {
   font-size: 1.4rem;
-  font-family: poppins;
+  font-family: Roboto Slab;
   margin-bottom: 1rem;
-  color: var(--black-1);
 }
 .testimonial__item__stars {
   max-height: 15px;
@@ -772,7 +531,7 @@
 .testimonial__item__text {
   font-size: 1.4rem;
 }
-@media only screen and (min-width: 768) {
+@media only screen and (min-width: 768px) {
   .testimonial__wrapper {
     max-width: 900px;
   }
@@ -782,6 +541,7 @@
   }
   .testimonial__items__wrapper {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   .testimonial__item {
     padding: 2rem;
@@ -807,11 +567,13 @@
     flex: auto;
   }
 }
-/*NV Thuan - Newsletter Section style*/
+/* End Testimonial Section */
+
+/* Newsletter Section */
 .newsletter__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--green-2);
+  background-color: rgb(241, 142, 99);
   padding: 1.5rem;
   border-radius: 8px;
   gap: 2rem;
@@ -824,7 +586,7 @@
 }
 .newsletter__text {
   font-size: 1.4rem;
-  color: var(--orange-1);
+  color: var(--black-2);
   font-weight: 500;
 }
 .newsletter__form form {
@@ -852,6 +614,7 @@
   font-size: 1.4rem;
   padding: 0 2rem;
   height: 100%;
+  /* width: 100%; */
   position: absolute;
   right: 0;
   top: 0;
@@ -862,8 +625,8 @@
     padding: 5rem;
     align-items: center;
   }
-  .newsletter__form,
-  .newsletter__info {
+  .newsletter__info,
+  .newsletter__form {
     flex: 1;
   }
   .newsletter__title {
@@ -882,8 +645,9 @@
     font-size: 1.8rem;
     padding: 2rem;
   }
-  .newsletter__form botton[type="submit"] {
+  .newsletter__form button[type="submit"] {
     font-size: 1.8rem;
     padding: 0 3rem;
   }
 }
+/* End Newsletter Section */
