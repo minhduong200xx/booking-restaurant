@@ -127,7 +127,7 @@
 /* Footer  */
 footer {
   width: 100vw;
-  background: var(--lightorange-1);
+  background: rgba(249, 153, 111, 0.91);
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
@@ -348,10 +348,11 @@ footer {
   }
   .dishGrid__item__price {
     font-size: 2rem;
+    color: var(--orange-1);
     margin-bottom: 1rem;
   }
 }
-/* Contact Style */
+/* Liên hệ Style */
 #form {
   padding: 5rem 0;
 }
@@ -359,6 +360,7 @@ footer {
   font-size: 1.8rem;
   color: var(--black-1);
   font-weight: 600;
+  margin-top: 100px;
 }
 .form__wrapper {
   padding: 3rem 0;
