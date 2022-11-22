@@ -90,3 +90,4 @@ function send() {
     showBanner(".banner.error");
   }
 }
+//Đăng ký đăng nhập

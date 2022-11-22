@@ -128,8 +128,6 @@
 footer {
   width: 100vw;
   background: rgba(249, 153, 111, 0.91);
-  padding-top: 5rem;
-  padding-bottom: 2rem;
 }
 .footer__wrapper {
   display: flex;
@@ -183,10 +181,6 @@ footer {
   line-height: 1.4em;
 }
 @media only screen and (min-width: 768px) {
-  footer {
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-  }
   .footer__wrapper {
     flex-direction: row;
   }
@@ -354,7 +348,7 @@ footer {
 }
 /* Liên hệ Style */
 #form {
-  padding: 5rem 0;
+  padding: 0;
 }
 .form__title {
   font-size: 1.8rem;
