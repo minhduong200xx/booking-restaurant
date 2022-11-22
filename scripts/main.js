@@ -69,20 +69,9 @@ const hideBanners = (e) => {
 function send() {
   var arr = document.getElementsByName("1");
   console.log(arr);
-  if (
-    arr[0] != "" &&
-    arr[1] != "" &&
-    arr[2] != "" &&
-    arr[3] != "" &&
-    arr[4] != "" &&
-    arr[0] != null &&
-    arr[1] != null &&
-    arr[2] != null &&
-    arr[3] != null &&
-    arr[4] != null
-  ) {
-    showBanner(".banner.success");
-  } else {
+  if (arr[0] != "" || arr[0] == null) {
     showBanner(".banner.error");
+  } else {
+    showBanner(".banner.success");
   }
 }
