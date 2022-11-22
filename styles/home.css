@@ -81,6 +81,9 @@
   flex-direction: 10rem;
   gap: 3rem;
 }
+.ourSpecials__right {
+  padding: 2rem;
+}
 .ourSpecials__left {
   display: flex;
   gap: 1rem;
@@ -128,6 +131,7 @@
   font-size: 1.8rem;
   color: var(--black-1);
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .ourSpecials__text {
   font-size: 1.4rem;
@@ -186,6 +190,9 @@
   }
   .ourSpecials__item {
     width: 100%;
+  }
+  .ourSpecials__title {
+    margin-top: 2rem;
   }
 }
 /* Discount Styles */

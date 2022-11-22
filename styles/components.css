@@ -317,7 +317,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 .dishGrid__item__price {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: var(--orange-1);
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -325,6 +325,9 @@ footer {
 .dishGrid__item__stars {
   max-height: 15px;
   width: max-content;
+}
+.dishGrid__item__stars img {
+  height: 20px;
 }
 @media only screen and (min-width: 768px) {
   .dishGrid__title {
@@ -347,6 +350,9 @@ footer {
     font-size: 2rem;
     color: var(--orange-1);
     margin-bottom: 1rem;
+  }
+  .dishGrid__item__stars img {
+    height: 40px;
   }
 }
 /* Liên hệ Style */
