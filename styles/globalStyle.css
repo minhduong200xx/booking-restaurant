@@ -56,3 +56,6 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+button > a {
+  color: white;
+}

@@ -9,7 +9,7 @@ body {
   background: linear-gradient(to bottom, #ff2c02, #f18e42, #c39623);
 }
 .main {
-  width: 300px;
+  width: 500px;
   height: 500px;
   background: red;
   overflow: hidden;
@@ -38,12 +38,12 @@ label {
 }
 input {
   width: 60%;
-  height: 20px;
+  height: 30px;
   background: #e0dede;
   justify-content: center;
   display: flex;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -88,4 +88,7 @@ button:hover {
 }
 #chk:checked ~ .signup label {
   transform: scale(0.6);
+}
+.form > button > a {
+  color: #ffffff;
 }
