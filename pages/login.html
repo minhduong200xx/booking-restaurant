@@ -17,64 +17,28 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-        <form action="#">
-          <h1>Tạo tài khoản</h1>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fa fa-facebook" alt=""></i></a>
-            <a href="#" class="social"><i class="fa fa-google"></i></a>
-            <a href="#" class="social"><i class="fa fa-instagram"></i></a>
-          </div>
-          <span>hoặc đăng ký tài khoản</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Đăng ký</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Đăng nhập</h1>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fa fa-facebook" alt=""></i></a>
-            <a href="#" class="social"><i class="fa fa-google"></i></a>
-            <a href="#" class="social"><i class="fa fa-instagram"></i></a>
-          </div>
-          <span>hoặc dùng tài khoản đã đăng ký</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Quên mật khẩu?</a>
-          <button><a class="home" href="../index.html">Đăng nhập</a></button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Chào mừng trở lại!</h1>
-            <p>Để sử dụng dịch vụ của nhà hàng vui lòng đăng nhập</p>
-            <button class="ghost" id="signIn">Đăng nhập</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Chào, Bạn Mới</h1>
-            <p>Hãy nhập thông tin của mình và đến với K-Food</p>
-            <button class="ghost" id="signUp">Đăng ký</button>
-          </div>
+    <div class="main">  	
+      <input type="checkbox" id="chk" aria-hidden="true">
+  
+        <div class="signup">
+          <form>
+            <label for="chk" aria-hidden="true">Đăng ký</label>
+            <input type="text" name="txt" placeholder="User name" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Password" required="">
+            <button>Đăng ký</button>
+          </form>
         </div>
-      </div>
-      <script>
-        const signUpButton = document.getElementById("signUp");
-        const signInButton = document.getElementById("signIn");
-        const container = document.getElementById("container");
-
-        signUpButton.addEventListener("click", () => {
-          container.classList.add("right-panel-active");
-        });
-
-        signInButton.addEventListener("click", () => {
-          container.classList.remove("right-panel-active");
-        });
-      </script>
+  
+        <div class="login">
+          <form>
+            <label for="chk" aria-hidden="true">Đăng nhập</label>
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Password" required="">
+            <button><a href="../index.html">Đăng nhập</a></button>
+          </form>
+        </div>
+    </div>
     </div>
   </body>
 </html>
