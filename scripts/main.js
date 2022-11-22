@@ -53,12 +53,8 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
-//Success popup
-// Pssst, I've created a github package - https://github.com/brookesb91/dismissible
-
 const showBanner = (selector) => {
   hideBanners();
-  // Ensure animation plays even if the same alert type is triggered.
   requestAnimationFrame(() => {
     const banner = document.querySelector(selector);
     banner.classList.add("visible");
@@ -90,4 +86,3 @@ function send() {
     showBanner(".banner.error");
   }
 }
-//Đăng ký đăng nhập
