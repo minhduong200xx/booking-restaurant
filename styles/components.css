@@ -80,7 +80,7 @@
     transform: translate(0%);
     overflow: hidden;
     transition: 0.3s ease-in transform;
-    width: 100px;
+    width: fit-content;
   }
   .nav__list.show {
     transform: translateX(-100%);
